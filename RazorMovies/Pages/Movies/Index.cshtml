@@ -2,7 +2,7 @@
 @model RazorMovies.Pages.Movies.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Gestor";
 }
 
 <style>
@@ -14,7 +14,7 @@
 <h1>Peliculas</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Agregar pelicula</a>
 </p>
 <div style="overflow-x: auto;">
 <table class="table" style="background-color: #0d0630; color: white; width: 150%" border="1">
@@ -71,7 +71,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Director)
             </td>
-            <td>
+                    <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
