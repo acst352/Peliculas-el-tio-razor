@@ -44,5 +44,5 @@ namespace RazorMovies.SeedData
                 context.SaveChanges();
             }
         }
-    } 
+    }
 }

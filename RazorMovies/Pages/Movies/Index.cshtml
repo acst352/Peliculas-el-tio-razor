@@ -26,9 +26,11 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Genre)
             </th>
-            <th>
+                
+                @* <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Director)
-            </th>
+                </th>
+                *@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Description)
             </th>
@@ -68,9 +70,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Genre)
             </td>
+            @*
             <td>
                 @Html.DisplayFor(modelItem => item.Director)
             </td>
+            *@
                     <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
