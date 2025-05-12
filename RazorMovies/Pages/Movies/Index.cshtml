@@ -26,11 +26,17 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Genre)
             </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Movie[0].Rating)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
+                </th>
                 
                 @* <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Director)
                 </th>
-                *@
+                
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Description)
             </th>
@@ -40,9 +46,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].TrailerUrl)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Rating)
-            </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Duration)
             </th>
@@ -55,10 +59,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Cast)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
-            </th>
-            <th></th>
+            *@
         </tr>
     </thead>
     <tbody>
@@ -70,12 +71,18 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Genre)
             </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+             </td>
+
+             <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+             </td>
             @*
             <td>
                 @Html.DisplayFor(modelItem => item.Director)
             </td>
-            *@
-                    <td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
@@ -84,9 +91,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.TrailerUrl)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </td>
+
             <td>
                 @Html.DisplayFor(modelItem => item.Duration)
             </td>
@@ -99,9 +104,8 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Cast)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
-            </td>
+            *@
+
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
