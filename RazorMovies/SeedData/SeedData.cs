@@ -24,21 +24,24 @@ namespace RazorMovies.SeedData
                         Title = "The Shawshank Redemption",
                         Genre = "Drama",
                         ReleaseDate = DateTime.Parse("1994-9-23"),
-                        Rating = "R"
+                        Rating = "P-13",
+                        Price = 2.1m
                     },
                     new Movie
                     {
                         Title = "The Godfather",
                         Genre = "Crime",
                         ReleaseDate = DateTime.Parse("1972-3-24"),
-                        Rating = "R"
+                        Rating = "R",
+                        Price = 3.9m
                     },
                     new Movie
                     {
                         Title = "The Dark Knight",
                         Genre = "Action",
                         ReleaseDate = DateTime.Parse("2008-7-18"),
-                        Rating = "PG-13"
+                        Rating = "A",
+                        Price = 1.9m
                     }
                 );
                 context.SaveChanges();
