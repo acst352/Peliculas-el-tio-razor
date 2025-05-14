@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{searchString?}"
 @model RazorMovies.Pages.Movies.IndexModel
 
 @{
@@ -16,6 +16,13 @@
 <p>
     <a asp-page="Create">Agregar pelicula</a>
 </p>
+
+<form>
+    <p>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <div style="overflow-x: auto;">
 <table class="table" style="background-color: #0d0630; color: white; width: 150%" border="1">
     <thead>
