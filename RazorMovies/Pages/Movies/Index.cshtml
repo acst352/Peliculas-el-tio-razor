@@ -45,31 +45,6 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Movie[0].Price)
                 </th>
-                @* <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Director)
-                </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].ImageUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].TrailerUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Duration)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Language)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Country)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Cast)
-            </th>
-            *@
         </tr>
     </thead>
     <tbody>
@@ -90,34 +65,6 @@
              <td>
                 @Html.DisplayFor(modelItem => item.Price)
              </td>
-            @*
-            <td>
-                @Html.DisplayFor(modelItem => item.Director)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImageUrl)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TrailerUrl)
-            </td>
-
-            <td>
-                @Html.DisplayFor(modelItem => item.Duration)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Language)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Country)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cast)
-            </td>
-            *@
-
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |

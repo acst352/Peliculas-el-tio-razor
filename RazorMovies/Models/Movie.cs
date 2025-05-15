@@ -22,13 +22,5 @@ namespace RazorMovies.Models
         [Required]
         [StringLength(5)]
         public string Rating { get; set; } = string.Empty;
-        // public string? Duration { get; set; }
-        // public string? Language { get; set; }
-        // public string? Country { get; set; }
-        // public string? Cast { get; set; }
-        // public string? Director { get; set; }
-        // public string? Description { get; set; }
-        // public string? ImageUrl { get; set; }
-        // public string? TrailerUrl { get; set; }
     }
 }
